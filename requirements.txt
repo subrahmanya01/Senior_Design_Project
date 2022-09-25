@@ -44,6 +44,7 @@ matplotlib-inline==0.1.3
 mypy==0.910
 mypy-extensions==0.4.3
 nest-asyncio==1.5.4
+numpy==1.18.5
 opencv-contrib-python==4.5.5.64
 opencv-python==4.5.5.64
 opt-einsum==3.3.0
