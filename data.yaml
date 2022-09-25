@@ -1,0 +1,6 @@
+names:
+- '-'
+- pothole
+nc: 2
+train: /content/datasets/pothole-detection-1/train/images
+val: /content/datasets/pothole-detection-1/valid/images
