@@ -8,7 +8,6 @@ import platform
 import sys
 from pathlib import Path
 import base64
-from modelrun import run
 
 
 app = Flask(__name__)
@@ -37,7 +36,7 @@ def api():
         image_data = request.form.get("content").split(",")[1]
         with open("static/Pothole/client_image.png","wb") as f:
             f.write(base64.b64decode(image_data))
-        res  = run()
+        res  = True
         if(res):
             return "Potholes Detected"
         else:
