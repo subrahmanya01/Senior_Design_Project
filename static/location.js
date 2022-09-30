@@ -41,7 +41,7 @@ function sendRequest()
 {
  context.drawImage(video,0 , 0,canvas.width,canvas.height);
 
- $.post("http://127.0.0.1:5000/api",
+ $.post("/api",
  {
      label:"video capture",
      content: canvas.toDataURL("image/png")
