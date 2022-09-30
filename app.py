@@ -1,4 +1,5 @@
-from flask import Flask, render_template,request
+from flask import Flask, jsonify,render_template,request
+from processdata import processdata
 import base64
 #from modelrun import run
 
@@ -9,11 +10,6 @@ app = Flask(__name__)
 @app.route('/')
 def main():
     return render_template("index.html")
-
-@app.route("/contribute")
-def contribute():
-    return render_template("location.html")
-
 
 @app.route("/api", methods=['GET','POST'])
 def api():
