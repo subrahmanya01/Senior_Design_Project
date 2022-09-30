@@ -1,5 +1,4 @@
-from flask import Flask, jsonify,render_template,request
-from processdata import processdata
+from flask import Flask,render_template,request
 import base64
 #from modelrun import run
 
@@ -28,4 +27,4 @@ def api():
     
     
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
